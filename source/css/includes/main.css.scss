@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import "../import-me";
+
+.icon{
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px;
+  width: 18px;
+  height: 18px;
+  &.alert{
+    background: #cc314f;
+    color: #fff;
+  }
+}
+
+.credit-panel{
+  box-shadow: none;
+  .panel-heading{
+    h4{
+      margin: 0 0 8px 0;
+      font-weight: 600;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      color: #727272;
+    }
+  }
+  .course-slots{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      margin-bottom: 5px;
+      background: #fff;
+      border: dashed 1px #dddddd;
+      border-radius: $border-radius-small;
+      padding: 15px 20px;
+      position: relative;
+      color: #aeaeae;
+      font-weight: 300;
+      height: 51px;
+      &.filled-course{
+        padding: 8px 10px 0px 20px;
+        border: solid 1px #c5c5c5;
+        a{
+          color: #3f3f3f;
+          display: block;
+          span{
+            display: block;
+            font-size: 12px;
+            color: #aaaaaa;
+            strong{
+              font-weight: 400;
+              color: #3f3f3f;
+            }
+            &.course-actions{
+              display: flex;
+              flex-direction: column-reverse;
+              position: absolute;
+              top: 0;
+              right:0;
+              height: 100%;
+              width: 40px;
+              padding-bottom: 3px;
+              .icon{
+                font-style: normal;
+                margin: 0 0 2px 2px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 12px;
+                border: solid 1px #474743;
+              }
+            }
+          }
+          &:hover{
+            text-decoration: none;
+          }
+          &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: #77bb1d;
+          }
+        }
+        > .popover{
+          color: #444444;
+          width: 100%;
+          max-width: 100%;
+          font-size: 13px;
+          padding: 0;
+          .arrow{
+            left: 88% !important;
+          }
+          &:before{
+            display: none !important;
+          }
+
+          a{
+            color: #2e8ab7;
+          }
+          .popover-content{
+            position: relative;
+            overflow: hidden;
+            &:after{
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0px;
+              width: 8px;
+              height: 100%;
+              background: #ff3b61;
+              border-radius: $border-radius-small 0 0 $border-radius-small;
+            }
+          }
+        }
+      }
+      &.add-course{
+        padding: 8px 10px 0px 50px;
+        border: solid 1px #c5c5c5;
+        &:before{
+          content: '+';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 100%;
+          background: #21a6da;
+          color: #fff;
+          font-size: 48px;
+          text-align: center;
+          line-height: 50px;
+          font-weight: 100;
+          font-family: 'Raleway', sans-serif;
+        }
+        a{
+          color: #1077aa;
+          span{
+            display: block;
+            font-size: 12px;
+            color: #6a6a6a;
+          }
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .panel-footer{
+    background-color: #21a6da;
+    text-align: center;
+    .btn{
+      color: #fff;
+      background-color: $brand-secondary;
+      position: relative;
+      border: solid 1px #21a6da;
+      box-shadow:  0 0 0 1px $brand-secondary;
+      font-weight: 300;
+      padding: 15px;
+      line-height: 1;
+    }
+  }
+  &.panel-active{
+    background-color: #fff;
+    border: solid 1px #c5c5c5;
+    .panel-heading{
+      background-color: #efefef;
+    }
+  }
+}

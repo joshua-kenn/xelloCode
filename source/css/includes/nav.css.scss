@@ -1,0 +1,104 @@
+@import "../import-me";
+
+.header{
+  padding-top: 36px;
+  .navbar-brand{
+    height: auto;
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .remaining-credits{
+    padding-top: 8px;
+    display: inline-block;
+    color: #686868;
+    .icon{
+      margin-right: 5px;
+    }
+  }
+  .progress-contain{
+    float: right;
+    width: 250px;
+    padding-right: 50px;
+    position: relative;
+    font-size: 12px;
+    padding-top: 12px;
+    @media (max-width: $screen-sm-max) {
+      top: 10px;
+      width: 50%;
+      float: none;
+      transform: translateX(50%);
+    }
+    .progress{
+      border: solid 1px #dddddd;
+      box-shadow: none;
+      height: 15px;
+    }
+    .progress-bar{
+      box-shadow: none;
+    }
+    .progress-indicator{
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 50px;
+      text-align: right;
+      strong{
+        color: #3c7710;
+      }
+    }
+  }
+}
+.filter-bar{
+  background: #efefef;
+  border: solid 1px #dddddd;
+  border-radius: $border-radius-small;
+  margin-bottom: 40px;
+  padding: 5px 16px;
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 20px;
+  }
+  .navbar{
+    background-color: transparent;
+    border: none;
+    label{
+      font-weight: 400;
+    }
+    .divider{
+      display: inline-block;
+      width: 1px;
+      background-color: #dedede;
+      height: 35px;
+      margin: 0 20px;
+      vertical-align: middle;
+    }
+    select.form-control{
+      max-width: 300px;
+      width: 300px;
+      margin-left: 20px;
+      @media (max-width: $screen-md-max) {
+        max-width: auto;
+        width: auto;
+      }
+      @media (max-width: $screen-xs-max) {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .checkbox-inline{
+      padding-left: 28px;
+      margin-left: 20px;
+      @media (max-width: $screen-md-max) {
+        margin-left: 10px;
+      }
+      input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+        margin: 1px 0 0 -28px;
+      }
+    }
+  }
+}
+
+

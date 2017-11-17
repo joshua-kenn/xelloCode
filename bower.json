@@ -1,0 +1,10 @@
+{
+  "name": "xelloCode",
+  "private": true,
+  "dependencies": {
+    "lodash": "3.10.1",
+    "jquery": "1.11.3",
+    "angular": "1.2.29",
+    "bootstrap-sass": "3.3.5"
+  }
+}

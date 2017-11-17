@@ -1,0 +1,1 @@
+define("scripts",["exports"],function(exports){"use strict";var $=jQuery;$(document).ready(function(){$(function(){$('[data-toggle="popover"]').popover({"html":!0})})})});
